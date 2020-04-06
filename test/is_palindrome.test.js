@@ -38,6 +38,17 @@ describe('isPalindrome()', () => {
     expect(answer).toBeTruthy();
   });
 
+  it('returns true for input "1 day yad 1"', () => {
+    // Arrange
+    const text = '1 day yad 1';
+
+    // Act
+    answer = isPalindrome(text);
+
+    // Assert
+    expect(answer).toBeTruthy();
+  });
+
   it('returns false for input "1 day yad 2"', () => {
     // Arrange
     const text = '1 day yad 2';
